@@ -4,12 +4,12 @@ public class SpiralMatrix {
     public static void main(String[] args) {
         List<Integer> spiral = new ArrayList<Integer>();
         // int[][] arr = {{1,2,3},{4,5,6},{7,8,9}};
-        int[][] arr = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
+        // int[][] arr = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
+        int[][] arr = {{1,2},{3,4}};
+        int m = arr.length ; // row // 1
+        int n = arr[0].length ; // colo // 1
 
-        int m = arr.length ; // row 
-        int n = arr[0].length ; // colo
-
-        int i = 0 ;
+        int i = 0 ; 
         int j = 0 ;
 
         while(j < n){
@@ -35,12 +35,12 @@ public class SpiralMatrix {
             spiral.add(arr[i][j]);
         }
 
-        System.out.println(j); // 0
+        // System.out.println(j); // 0
 
         i = i - 1 ;
 
-        System.out.println(i);
-
+        // System.out.println(i);
+        
         while(j < n - 1){
             spiral.add(arr[i][j]);
             j++;
