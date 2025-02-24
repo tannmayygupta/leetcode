@@ -3,9 +3,12 @@ import java.util.*;
 public class ThreeSum {
     public static void main(String[] args) {
 
-        List<List<Integer>> list = new ArrayList<>();
+        Set<List<Integer>> list = new HashSet<>();
+        
         int[] nums = {-1,0,1,2,-1,-4};
         int n = nums.length ;
+        Arrays.sort(nums); // as the output where assending order in leetcode :))))))
+        
         for(int i = 0 ; i < n ; i++){
             for(int j = i + 1 ; j < n ; j++){
                 // List l = new ArrayList<>();
@@ -17,12 +20,15 @@ public class ThreeSum {
                         List<Integer> l = new ArrayList<>();
                         l.add(nums[i]);
                         l.add(nums[j]);
-                        l.add(nums[k]);                       
-                        list.add(l);
+                        l.add(nums[k]);
+                        // for unique list of three
+                        Collections.sort(l); // this will sort all list of three in asencing order so that the next main list added is ignore                        
+                        list.add(l); // need to change main list to set such that the duplicate 
                     }
                 }
             }
         }
+
         System.out.println(list);
     }
 }
