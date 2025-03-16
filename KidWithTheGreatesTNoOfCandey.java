@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class KidWithTheGreatesTNoOfCandey {
     public static void main(String[] args) {
     
@@ -22,7 +25,11 @@ public class KidWithTheGreatesTNoOfCandey {
 
         int n = candies.length ;
 
-        boolean[] arr = new boolean[n];
+        // boolean[] arr = new boolean[n];
+
+        // converting my boolean array to boolean linkList 
+
+        List<Boolean> arr = new ArrayList<>();
 
         int max = Integer.MIN_VALUE;
 
@@ -38,19 +45,22 @@ public class KidWithTheGreatesTNoOfCandey {
 
         for(int i = 0 ; i < n ; i++){
             if(candies[i] + extraCandies >= max){
-                arr[i] = true ;
+                // arr[i] = true ;
+                arr.add(true);
             }
             else{
-                arr[i] = false ;
+                arr.add(false);
             }
         }
 
 
-        for(int i = 0 ; i < n ; i++){
+        // for(int i = 0 ; i < n ; i++){
 
-            System.out.println(arr[i]);
             
-        } 
+            
+        // }
+        
+        System.out.println(arr);
 
     }
 }
