@@ -1,3 +1,5 @@
+import java.util.HashSet;
+
 public class ReportSpamMessage {
     public static void main(String[] args) {
 
@@ -11,22 +13,23 @@ public class ReportSpamMessage {
         
     }
     public static boolean reportSpam(String[] message, String[] bannedWords) {
+        HashSet<String> set = new HashSet<>(bannedWords.length + bannedWords.length / 3 + 1);
         int count = 0;
-        
+        boolean isSpam = false;
+
+        for (String words : bannedWords) {
+            set.add(words);
+        }
         for (int i = 0; i < message.length; i++) {
-            for (int j = 0; j < bannedWords.length; j++) {
-                if (message[i].equals(bannedWords[j])) {
-                    count++;
-                    break;
+            if (set.contains(message[i])) {
+                count++;
+                if (count == 2) {
+                    return true;
                 }
             }
-            if (count >= 2) {
-                return true;
-            }
         }
-
         return false;
-   }
+    }
 
 }
 
