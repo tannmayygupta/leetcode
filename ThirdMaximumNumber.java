@@ -11,17 +11,21 @@ public class ThirdMaximumNumber {
         
     }
     public static int thirdMax(int[] nums) {
+        
+        Arrays.sort(nums);
 
-        if (nums.length < 3) {
-            int max = Arrays.stream(nums).max().getAsInt();
-            return max;
+        if (nums.length < 3 && nums.length == 2) {
+            return nums[1];
+        }
+        else if (nums.length < 3 && nums.length == 1) {
+            return nums[0];
         }
 
         HashSet<Integer> sett = new HashSet<>();
         for (int i = 0; i < nums.length; i++) {
             sett.add(nums[i]);
         }
-
+        
         Integer[] nums1 = sett.toArray(new Integer[0]);
 
         Arrays.sort(nums1);
