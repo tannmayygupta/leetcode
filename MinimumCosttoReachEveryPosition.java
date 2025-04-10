@@ -1,6 +1,6 @@
 public class MinimumCosttoReachEveryPosition {
     public static void main(String[] args) {
-        int[] cost = [5,3,3,1,4,2];
+        int[] cost = {5,3,3,1,4,2};
         int[] a = minCosts(cost);
         
     }
