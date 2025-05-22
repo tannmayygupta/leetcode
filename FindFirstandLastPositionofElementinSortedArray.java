@@ -15,6 +15,7 @@ public class FindFirstandLastPositionofElementinSortedArray {
         }
     }
         public static int[] searchRange(int[] arr, int target) {
+            
             int n = arr.length - 1;
             int left = 0;
             int right = n - 1;
