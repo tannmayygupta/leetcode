@@ -1,3 +1,7 @@
+// 162. Find Peak Element
+// https://leetcode.com/problems/find-peak-element/
+
+
 import java.util.Scanner;
 
 public class FindPeakElement {
@@ -11,7 +15,7 @@ public class FindPeakElement {
         }
 
         System.out.println(findPeakElement(nums));
-        
+
     }
     public static int findPeakElement(int[] nums) {
         int start = 0 ;
