@@ -16,7 +16,7 @@ public class RotatedBinarySearch {
             System.out.println(found);
         }
         else{
-            System.out.println(binaryS(arr, target, pivot + 1, arr.length));
+            System.out.println(binaryS(arr, target, pivot + 1, arr.length - 1));
         }
     }
     public static int binaryS(int[] arr, int target , int start , int end){
@@ -46,15 +46,15 @@ public class RotatedBinarySearch {
 
             // 4 cases wirtten in yellow diary ultera tech
 
-            if(arr[mid] > arr[mid + 1]){
+            if(mid < end && arr[mid] > arr[mid + 1]){
                 return mid ;
             }
             
-            if(arr[mid] < arr[mid - 1]){
+            if(mid > start && arr[mid] < arr[mid - 1]){
                 return mid - 1 ;
             }
             
-            if(arr[start] > arr[mid]){
+            if(arr[start] >= arr[mid]){
                 end = mid - 1;
             }
             
