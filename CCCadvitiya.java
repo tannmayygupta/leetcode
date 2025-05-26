@@ -4,7 +4,7 @@ public class CCCadvitiya {
     public static void main (String[] args) throws java.lang.Exception
 	{
 	    String str="ADVITIYA";
-		Scanner sc=new Scanner(System.in);
+			
 		int T=sc.nextInt();
 		sc.nextLine();
 		
