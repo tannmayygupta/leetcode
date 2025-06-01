@@ -16,7 +16,7 @@ public class MaxSubArray {
         System.out.println(preSum);
     }
     static int max(int curSum , int maxSum){
-        if(curSum > maxSum){
+            if(curSum > maxSum){
             return curSum ;
         }
         else{
