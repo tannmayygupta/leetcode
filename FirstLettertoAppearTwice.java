@@ -27,6 +27,6 @@ public class FirstLettertoAppearTwice {
             }
         }
 
-        return 0 ;
+        return '0' ;
     }
 }
