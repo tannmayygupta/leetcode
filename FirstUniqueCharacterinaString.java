@@ -1,3 +1,7 @@
+// lowercase character in the the string
+
+//https://leetcode.com/problems/first-unique-character-in-a-string/
+
 public class FirstUniqueCharacterinaString {
     public static void main(String[] args) {
         String s = "samiksha" ;
