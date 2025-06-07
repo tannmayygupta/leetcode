@@ -1,26 +1,25 @@
 public class FirstUniqueCharacterinaString {
     public static void main(String[] args) {
-        String s = "Samiksha" ;
-        System.out.println(s);
-        
+        String s = "samiksha" ;
+        System.out.println(firstUniqChar(s));
+
     }
-    public static char repeatedCharacter(String s) {
-        int[] arr = new int[26];
+    public static int firstUniqChar(String s) {
+        int[]  arr = new int[26];
 
-        for(int i = 0 ; i < s.length() ; i++){
-
+        for(int i = 0 ; i < s.length(); i++){
             char c = s.charAt(i);
-
-            int j = c - 'a';
-
-            if(arr[j] == 1){
-                return c ;
-            }
-            else{
-                arr[j]++;
-            }
+            int j = c - 'a' ;
+            arr[j]++;
         }
 
-        return 0 ;
+        for(int k = 0 ; k < s.length() ; k++){
+            char ch = s.charAt(k);
+            int m = ch - 'a';
+            if(arr[m] == 1){
+                return k ;
+            }
+        }
+        return -1;
     }
 }
