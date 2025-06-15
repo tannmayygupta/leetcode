@@ -5,7 +5,7 @@ public class ReverseWordsinaStringIII{
 
         Scanner sc = new Scanner(System.in);
 
-        String s = sc.nextInt();
+        String s = sc.nextLine();
 
         System.out.println(s);
     }
