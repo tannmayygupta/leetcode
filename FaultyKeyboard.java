@@ -1,3 +1,6 @@
+// https://leetcode.com/problems/faulty-keyboard/
+// Faulty Keyboard
+
 import java.util.Scanner;
 
 public class FaultyKeyboard {
