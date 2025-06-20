@@ -29,6 +29,8 @@ public class FindtheOriginalTypedStringI {
             if(arr[i] == 0){
                 break;
             }
+
+            
             sum +=arr[i];
             index += 1 ;
         }
