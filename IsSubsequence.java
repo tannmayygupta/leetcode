@@ -1,5 +1,5 @@
 // Is Subsequence(firstly a thought wrong approach that find ch but not in sequence but after thinking more i got with new approach two pointer by initialising both pointer to 
-// the start of String s and t and then after find s char in t then moving s pointer else moving the t pointer
+// disthe start of String s and t and then after find s char in t then moving s pointer else moving the t pointer
 
 import java.util.Scanner;
 
