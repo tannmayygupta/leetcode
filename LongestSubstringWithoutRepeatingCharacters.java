@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+//https://leetcode.com/problems/longest-substring-without-repeating-characters/
+
 public class LongestSubstringWithoutRepeatingCharacters {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
