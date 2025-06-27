@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+// https://leetcode.com/problems/two-furthest-houses-with-different-colors/description/
+
+
 public class TwoFurthestHousesWithDifferentColors {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
