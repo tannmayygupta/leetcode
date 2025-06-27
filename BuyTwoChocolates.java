@@ -1,5 +1,12 @@
 import java.util.*;
 
+// https://leetcode.com/problems/buy-two-chocolates/solutions/6891281/2706-buy-two-chocolates/
+
+// 2706. Buy Two Chocolates
+
+// // sort the given prices array
+// then ques say buy two chocolate such that you buy 2 choclate and left with max money that is non-negative
+
 public class BuyTwoChocolates {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
