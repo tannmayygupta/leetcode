@@ -11,6 +11,7 @@ public class SmallestIndexWithDigitSumEqualtoIndex {
 
         int[] nums = {1,3,2};
 
+        
         System.out.println(smallestIndex(nums));
 
     }
