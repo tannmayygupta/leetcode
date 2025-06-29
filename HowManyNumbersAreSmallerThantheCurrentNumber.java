@@ -1,4 +1,10 @@
 public class HowManyNumbersAreSmallerThantheCurrentNumber {
+
+    // https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/description/
+
+    // 1365. How Many Numbers Are Smaller Than the Current Number
+
+
     public static void main(String[] args) {
         
         int[] nums = {8,1,2,2,3};
