@@ -1,6 +1,8 @@
 public class Duplicate {
 
     public static void main(String[] args) {
+
+        // https://leetcode.com/problems/contains-duplicate/description/ 
         
         int nums[] = {1,1,2,2,3,3,4};
         int n = nums.length ;
@@ -14,7 +16,9 @@ public class Duplicate {
             }
         
         }
-        return ptr1 ;
+        // return ptr1 ;
+
+        System.out.println(ptr1);
 
     }
     
