@@ -3,9 +3,12 @@ import java.util.Scanner;
 public class CCCadvitiya {
     public static void main (String[] args) throws java.lang.Exception
 	{
+		Scanner sc = new Scanner(System.in);
+
 	    String str="ADVITIYA";
 			
-		int T=sc.nextInt();
+		int T= sc.nextInt();
+		
 		sc.nextLine();
 		
 		for(int i=1;i<=T;i++){
