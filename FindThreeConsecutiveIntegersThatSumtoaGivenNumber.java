@@ -1,6 +1,10 @@
 import java.util.*;
 
 public class FindThreeConsecutiveIntegersThatSumtoaGivenNumber {
+
+    // https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/
+
+    // 2177. Find Three Consecutive Integers That Sum to a Given Number
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
