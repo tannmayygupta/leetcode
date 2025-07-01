@@ -1,6 +1,29 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+    // 500. Keyboard Row
+
+    // https://leetcode.com/problems/keyboard-row/description/
+
+            // firstly initialised 3 string for char in row1, row2, row3
+
+            // then in string array for a string at ith index,
+
+            // converted the character to lowercase
+
+            // check for the character in which row they belong
+
+            // by incrementing my counters mam1, mam2, mam3 for respective rows 
+
+            // and checking at the end if(words[i].length() == mam1 or mam2 or     
+            // mam3 )
+
+            // adding that word[i] to the arraylist, if found true
+
+            // coverting list and returning it 
+
+            // return ans.toArray(new String[0])
+
 public class KeyboardRow {
     public static void main(String[] args) {
 
