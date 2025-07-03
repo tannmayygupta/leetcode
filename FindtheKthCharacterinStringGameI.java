@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+// https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/description/
+
+// 3304. Find the K-th Character in String Game I
+
 public class FindtheKthCharacterinStringGameI {
     public static void main(String[] args) {
 
