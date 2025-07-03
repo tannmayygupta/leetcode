@@ -1,6 +1,12 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
+// firstly i understood what the que sayss and then got the solution
+
+// https://leetcode.com/problems/distribute-candies/description/
+
+// 575. Distribute Candies
+
 public class DistributeCandies {
     public static void main(String[] args) {
 
