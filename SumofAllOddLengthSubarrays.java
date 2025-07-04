@@ -1,3 +1,26 @@
+    // Intuition
+    // brute force thinkoff my mind
+
+    // Approach
+    // my approach says that max odd length sub array then decrementing 
+    // it so that it become smallest odd subarray that is 1 (odd > 1)
+
+    // then by sliding window we calculated the sum of all sub array       
+    // from maxlength to min odd length 
+
+    // and returning the result
+    // Complexity
+    // Time complexity: O(n 
+    // 3
+    // )
+    // Space complexity: O(n)
+
+    // 1588. Sum of All Odd Length Subarrays
+
+    // https://leetcode.com/problems/sum-of-all-odd-length-subarrays/description/?envType=problem-list-v2&envId=prefix-sum
+    
+
+
 public class SumofAllOddLengthSubarrays {
     public static void main(String[] args) {
 
