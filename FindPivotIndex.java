@@ -1,6 +1,10 @@
 public class FindPivotIndex {
     public static void main(String[] args) {
 
+        // 724. Find Pivot Index 
+
+        // https://leetcode.com/problems/find-pivot-index/solutions/
+
         int[] nums = {1,7,3,6,5,6};
 
         System.out.println(pivotIndex(nums));
