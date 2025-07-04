@@ -1,5 +1,8 @@
 public class Sumofdigits1945 {
     public static void main(String[] args) {
+
+        int k = 0 ;
+        
         String s = "iiii" ;
         StringBuilder Strnum = new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
