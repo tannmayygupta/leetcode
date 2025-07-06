@@ -1,5 +1,19 @@
 import java.util.Arrays;
 
+// Intuition
+// simple and bruteforce approach
+
+// Approach
+// i basically use a 2 pointer i and i+1 and compare and increment the cou otherwise reinitalise it
+
+// Complexity
+// Time complexity: O(n)
+// Space complexity: O(1)
+
+// 1394. Find Lucky Integer in an Array
+
+// https://leetcode.com/problems/find-lucky-integer-in-an-array/description/
+
 public class FindLuckyIntegerinanArray {
     public static void main(String[] args) {
 
