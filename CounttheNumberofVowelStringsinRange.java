@@ -1,5 +1,7 @@
 public class CounttheNumberofVowelStringsinRange {
     public static void main(String[] args) {
+        // 2586. Count the Number of Vowel Strings in Range
+        // https://leetcode.com/problems/count-the-number-of-vowel-strings-in-range/description/
         String[] words = {"are","amy","u"};
         
         int left = 0 ;
