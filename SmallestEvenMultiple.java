@@ -1,3 +1,12 @@
+    // Approach
+    // if num is even then we have its return num otherwise return n * 2 >
+    // Complexity
+    // Time complexity:O(n)
+    // Space complexity:O(1)
+    
+    // 2413. Smallest Even Multiple
+    // https://leetcode.com/problems/smallest-even-multiple/description/
+
 import java.util.Scanner;
 
 public class SmallestEvenMultiple {
