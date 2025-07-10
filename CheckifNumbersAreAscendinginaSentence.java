@@ -11,7 +11,6 @@ public class CheckifNumbersAreAscendinginaSentence {
 
         System.out.println(areNumbersAscending(s));
         
-        
     }
     public static boolean areNumbersAscending(String s) {
 
