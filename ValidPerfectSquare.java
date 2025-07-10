@@ -6,6 +6,7 @@ public class ValidPerfectSquare {
         // https://leetcode.com/problems/valid-perfect-square/description/
 
         // 367. Valid Perfect Square
+        
 
         Scanner sc = new Scanner(System.in);
 
