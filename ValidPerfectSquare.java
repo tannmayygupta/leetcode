@@ -3,6 +3,10 @@ import java.util.Scanner;
 public class ValidPerfectSquare {
     public static void main(String[] args) {
 
+        // https://leetcode.com/problems/valid-perfect-square/description/
+
+        // 367. Valid Perfect Square
+
         Scanner sc = new Scanner(System.in);
 
         int num = sc.nextInt();
