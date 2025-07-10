@@ -1,13 +1,18 @@
 import java.util.Scanner;
 
 public class HexadecimalandHexatrigesimalConversion {
+
+    // 3602. Hexadecimal and Hexatrigesimal Conversion 
+    
+    // https://leetcode.com/problems/hexadecimal-and-hexatrigesimal-conversion/description/
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
 
         System.out.println(concatHex36(n));
-        
+
     }
     public static String concatHex36(int n) {
 
