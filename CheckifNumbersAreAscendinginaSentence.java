@@ -10,6 +10,8 @@ public class CheckifNumbersAreAscendinginaSentence {
         String s = sc.nextLine();
 
         System.out.println(areNumbersAscending(s));
+
+        
         
     }
     public static boolean areNumbersAscending(String s) {
