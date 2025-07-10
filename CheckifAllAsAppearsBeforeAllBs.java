@@ -5,6 +5,8 @@ public class CheckifAllAsAppearsBeforeAllBs {
     // 2124. Check if All A's Appears Before All B's
 
     // https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/description/
+
+    
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
