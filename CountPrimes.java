@@ -1,6 +1,10 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
+// 204. Count Primes
+
+// https://leetcode.com/problems/count-primes/description/
+
 public class CountPrimes {
 
     public static void main(String[] args) {
