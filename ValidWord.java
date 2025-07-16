@@ -1,6 +1,8 @@
 public class ValidWord {
     public static void main(String[] args) {
 
+        // 
+
         String word = "a3$e";
 
         System.out.println(isValid(word));
@@ -35,7 +37,7 @@ public class ValidWord {
             }
         }
 
-        if(vowel >= 1 && consonant >= 1  && digit >= 1){
+        if(vowel >= 1 && consonant >= 1 ){
             return true ;
         }
 
