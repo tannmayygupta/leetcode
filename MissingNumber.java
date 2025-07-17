@@ -5,6 +5,7 @@ public class MissingNumber {
 
         System.out.println(missingNumber(nums));
         
+        
     }
     // method 2 without sorting using maths 
 
