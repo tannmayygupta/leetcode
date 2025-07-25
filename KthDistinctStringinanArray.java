@@ -11,6 +11,7 @@ public class KthDistinctStringinanArray {
     public static String kthDistinct(String[] arr, int k) {
         HashMap<String,Integer> ans = new HashMap<>();
 
+        
         for(int i = 0 ; i < arr.length ; i++){
             if(ans.containsKey(arr[i])){
                 int cur = ans.get(arr[i]);
