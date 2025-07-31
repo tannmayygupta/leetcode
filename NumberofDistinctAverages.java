@@ -1,6 +1,6 @@
 import java.util.Arrays;
 import java.util.HashSet;
-
+    // 2465. Number of Distinct Averages
 public class NumberofDistinctAverages {
     public static void main(String[] args) {
         
