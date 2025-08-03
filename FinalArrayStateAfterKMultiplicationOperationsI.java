@@ -1,6 +1,8 @@
 import java.util.Arrays;
 
 public class FinalArrayStateAfterKMultiplicationOperationsI {
+    // 3264. Final Array State After K Multiplication Operations I
+    // https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-i/description/
     public static void main(String[] args) {
         
         int[] nums = {2,1,3,5,6} ;
