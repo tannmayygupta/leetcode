@@ -1,28 +1,41 @@
 import java.util.Arrays;
 
 public class SingleNumber {
-
     public static void main(String[] args) {
-        int[] arr = {2,2,5,3,3,1,1};
+        int[] nums = {2,2,1};
 
-        Arrays.sort(arr);
-
-        int i = 0 ;
-
-        int curCount = 0 ;
-        int preCount = 0 ;
-        
-        while(i<arr.length - 1){
-            if(arr[i] != arr[i+1]){
-                if(preCount > curCount){
-
-                }
-            }
-            else{
-                
-            }
-        }
+        System.out.println(singleNumber(nums));
     }
 
-    
+    public static int singleNumber(int[] nums) {
+
+        if(nums.length == 1){
+            return nums[0];
+        }
+
+        Arrays.sort(nums);
+
+        int i = 0 ; 
+
+        int n = nums.length ;
+        while(i < n){
+            if(i == 0 && nums[i] != nums[i+1] ){ // for first elemnet
+                return nums[i];
+            }
+            else if(i == n - 1 && nums[i]!= nums[i-1]){ // for last elememt
+                return nums[i];
+            }
+            else if(i < n - 1 && nums[i] == nums[i+1]){ // for bich ke elment 
+                i= i+2 ; // when equal skiped
+            }
+            else if(i > 0 && i < n - 1 && nums[i] != nums[i+1] && nums[i] != nums[i-1]){
+                return nums[i]; // if betwween me no elenet come closer 
+            }
+            else {
+                i++;
+            }
+        }
+
+        return -1 ;    
+    }
 }
