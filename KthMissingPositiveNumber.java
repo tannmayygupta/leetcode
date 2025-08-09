@@ -1,9 +1,13 @@
 public class KthMissingPositiveNumber {
+    // 1539. Kth Missing Positive Number
+    // https://leetcode.com/problems/kth-missing-positive-number/description/
     public static void main(String[] args) {
 
         int[] arr = {1,2,3,4};
 
         int k = 2 ; 
+
+        System.out.println(findKthPositive(arr, k));
         
     }
 
