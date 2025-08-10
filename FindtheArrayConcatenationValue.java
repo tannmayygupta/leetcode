@@ -1,6 +1,7 @@
 public class FindtheArrayConcatenationValue {
     // 2562. Find the Array Concatenation Value
     // https://leetcode.com/problems/find-the-array-concatenation-value/description/
+    
     public static void main(String[] args) {
         int[] nums = {5,14,13,8,12};
 
