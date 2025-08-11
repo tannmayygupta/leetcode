@@ -1,4 +1,6 @@
 public class MostFrequentNumberFollowingKeyInanArray {
+    // https://leetcode.com/problems/most-frequent-number-following-key-in-an-array/description/
+    // 2190. Most Frequent Number Following Key In an Array
     public static void main(String[] args) {
 
         int[] nums = {1,1000,2};
