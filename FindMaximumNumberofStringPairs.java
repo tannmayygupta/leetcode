@@ -1,4 +1,6 @@
 public class FindMaximumNumberofStringPairs {
+    // 2744. Find Maximum Number of String Pairs
+    // https://leetcode.com/problems/find-maximum-number-of-string-pairs/description/
     public static void main(String[] args) {
 
         String[] words = {"cd","ac","dc","ca","zz"};
