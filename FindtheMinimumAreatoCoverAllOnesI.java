@@ -1,6 +1,7 @@
 public class FindtheMinimumAreatoCoverAllOnesI {
     public static void main(String[] args) {
-
+        // 3195. Find the Minimum Area to Cover All Ones I
+        // https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-i/description/?envType=daily-question&envId=2025-08-22
         int[][] grid = {{0},{1}};
 
         System.out.println(minimumArea(grid));
