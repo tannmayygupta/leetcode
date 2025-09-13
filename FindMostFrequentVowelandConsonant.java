@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+// 3541. Find Most Frequent Vowel and Consonant
+// https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/?envType=daily-question&envId=2025-09-13
+
 public class FindMostFrequentVowelandConsonant {
     public static void main(String[] args) {
 
