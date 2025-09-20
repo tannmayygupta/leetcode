@@ -1,4 +1,6 @@
 public class MaximumAreaofLongestDiagonalRectangle {
+    // 3000. Maximum Area of Longest Diagonal Rectangle
+    // https://leetcode.com/problems/maximum-area-of-longest-diagonal-rectangle/description/
     public static void main(String[] args) {
         int[][] dimensions = {{6,5},{8,6},{2,10},{8,1},{9,2},{3,5},{3,5}};
 
