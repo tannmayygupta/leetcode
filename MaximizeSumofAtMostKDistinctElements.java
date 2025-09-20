@@ -2,6 +2,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 
+// https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/description/
+// 3684. Maximize Sum of At Most K Distinct Elements
+
 public class MaximizeSumofAtMostKDistinctElements {
     public static void main(String[] args) {
 
