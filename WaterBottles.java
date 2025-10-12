@@ -1,5 +1,7 @@
 import java.util.Scanner;
+// 1518. Water Bottles
 
+// https://leetcode.com/problems/water-bottles/?envType=daily-question&envId=2025-10-11
 public class WaterBottles {
     public static void main(String[] args) {
 
