@@ -66,7 +66,7 @@ public class MinimumDistanceBetweenThreeEqualElementsII {
         return ans ;
     }
 
-    int cal(List<Integer> list){
+    static int cal(List<Integer> list){
         int ans = Integer.MAX_VALUE;
         // int list number are sotred in index for and they dont chanfge as they change in map, sets
 
