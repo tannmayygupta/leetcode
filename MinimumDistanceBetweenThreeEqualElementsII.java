@@ -3,6 +3,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+// 3741. Minimum Distance Between Three Equal Elements II
+
+// https://leetcode.com/problems/minimum-distance-between-three-equal-elements-ii/
 
 public class MinimumDistanceBetweenThreeEqualElementsII {
     public static void main(String[] args) {
