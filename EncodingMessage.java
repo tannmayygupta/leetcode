@@ -6,6 +6,7 @@ public class EncodingMessage {
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
+        // https://www.codechef.com/viewsolution/1221901057 
 		
 		Scanner sc = new Scanner(System.in);
 		
