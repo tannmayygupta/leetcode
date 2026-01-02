@@ -1,9 +1,10 @@
 import java.util.HashMap;
-
+// 961. N-Repeated Element in Size 2N Array
+// https://leetcode.com/problems/n-repeated-element-in-size-2n-array/description/?envType=daily-question&envId=2026-01-02
 public class RepeatedElementinSize2NArray {
     public static void main(String[] args) {
         int[] nums = {1,2,3,3};
-        
+
         System.out.println(repeatedNTimes(nums));
     }
 
