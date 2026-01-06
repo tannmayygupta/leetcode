@@ -1,4 +1,5 @@
 public class MaximumMatrixSum {
+    // 1975. Maximum Matrix Sum
     public static void main(String[] args) {
         int[][] nums =  {{1,4},{-1,7}} ;
         System.out.println(maxMatrixSum(nums));
