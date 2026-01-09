@@ -1,5 +1,6 @@
 import java.util.Scanner;
-
+// https://www.codechef.com/practice/course/1-star-difficulty-problems/DIFF1200/problems/ZEROSTRING
+// Zero String
 public class ZeroString {
     public static void main(String[] args) {
         // your code goes here
