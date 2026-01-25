@@ -1,4 +1,6 @@
 public class MinimumPrefixRemovaltoMakeArrayStrictlyIncreasing {
+    // 3818. Minimum Prefix Removal to Make Array Strictly Increasing
+    // https://leetcode.com/problems/minimum-prefix-removal-to-make-array-strictly-increasing/
     public static void main(String[] args) {
         int[] nums = {1,-1,2,3,3,4,5};
 
