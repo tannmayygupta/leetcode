@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+// https://codeforces.com/problemset/problem/1834/A
+// A. Unit Array
+
 public class UnitArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
