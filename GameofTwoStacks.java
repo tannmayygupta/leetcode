@@ -11,6 +11,9 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
+
+// Game of Two Stacks 
+// https://www.hackerrank.com/challenges/game-of-two-stacks/problem 
 public class GameofTwoStacks {
     public static void main(String[] args) throws IOException {
         List<Integer> a = new ArrayList<>();
