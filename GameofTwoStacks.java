@@ -28,63 +28,110 @@ public class GameofTwoStacks {
         System.out.println(twoStacks(10,a,b));
    }
 
-   public static int twoStacks(int maxSum, List<Integer> a, List<Integer> b) {
-    // Write your code here
+//    public static int twoStacks(int maxSum, List<Integer> a, List<Integer> b) {
+//     // Write your code here
     
-        int[] a1 = new int[a.size()];
-        int[] b1 = new int[b.size()];
+//         int[] a1 = new int[a.size()];
+//         int[] b1 = new int[b.size()];
         
-        for(int i = 0 ; i < a1.length ; i++){
-            a1[i] = a.get(i);
-        }
+//         for(int i = 0 ; i < a1.length ; i++){
+//             a1[i] = a.get(i);
+//         }
         
-        for(int i = 0 ; i < b1.length ; i++){
-            b1[i] = b.get(i);
-        }
+//         for(int i = 0 ; i < b1.length ; i++){
+//             b1[i] = b.get(i);
+//         }
         
-        return (maxCou(maxSum,0,0,a1,b1) - 1) ;
+//         return (maxCou(maxSum,0,0,a1,b1) - 1) ;
         
-        // see copy this is not the correct way to do it ;
-        // as there can be outher element less that the top that can help us to get the max pop count
+//         // see copy this is not the correct way to do it ;
+//         // as there can be outher element less that the top that can help us to get the max pop count
         
-        // int currsum = 0 ;
-        // int count = 0 ;
-        // int i= 0 ;
-        // int j = 0 ;
-        // int maxpop = 0 ;
-        // while(currsum < maxSum){
-        //     if(a.get(i) < b.get(j)){
-        //         currsum+=a.get(i);
-        //         count++;
-        //         i++;
-        //     }else if(a.get(i) > b.get(j)){
-        //         currsum+=b.get(j);
-        //         count++;
-        //         j++;
-        //     }else if(a.get(i) == b.get(j)){
-        //         currsum+=a.get(i);
-        //         count++;
-        //         i++;
-        //     }
+//         // int currsum = 0 ;
+//         // int count = 0 ;
+//         // int i= 0 ;
+//         // int j = 0 ;
+//         // int maxpop = 0 ;
+//         // while(currsum < maxSum){
+//         //     if(a.get(i) < b.get(j)){
+//         //         currsum+=a.get(i);
+//         //         count++;
+//         //         i++;
+//         //     }else if(a.get(i) > b.get(j)){
+//         //         currsum+=b.get(j);
+//         //         count++;
+//         //         j++;
+//         //     }else if(a.get(i) == b.get(j)){
+//         //         currsum+=a.get(i);
+//         //         count++;
+//         //         i++;
+//         //     }
             
-        //     if(currsum <= maxSum){
-        //         maxpop = Math.max(maxpop,count);
-        //     }
-        // }
-        // return maxpop ;
-    }
+//         //     if(currsum <= maxSum){
+//         //         maxpop = Math.max(maxpop,count);
+//         //     }
+//         // }
+//         // return maxpop ;
+//     }
     
-    public static int maxCou(int maxSum,int currSum,int count ,int[] a, int[] b){
-        if(maxSum < currSum){
-            return count ;
-        }
-        if(a.length == 0 || b.length == 0){
-            return count ;
-        }
+    // public static int maxCou(int maxSum,int currSum,int count ,int[] a, int[] b){
+    //     if(maxSum < currSum){
+    //         return count ;
+    //     }
+    //     if(a.length == 0 || b.length == 0){
+    //         return count ;
+    //     }
         
-        int ans1 = maxCou(maxSum, currSum + a[0] , count + 1, Arrays.copyOfRange(a, 1, a.length), b);
-        int ans2 = maxCou(maxSum, currSum + b[0] , count + 1, a, Arrays.copyOfRange(b, 1, b.length));
+    //     int ans1 = maxCou(maxSum, currSum + a[0] , count + 1, Arrays.copyOfRange(a, 1, a.length), b);
+    //     int ans2 = maxCou(maxSum, currSum + b[0] , count + 1, a, Arrays.copyOfRange(b, 1, b.length));
         
-        return Math.max(ans1 , ans2);
+    //     return Math.max(ans1 , ans2);
+    // }
+
+    public static int twoStacks(int maxSum, List<Integer> a, List<Integer> b) {
+        // Write your code here
+        // this approach is 2 pointer 
+
+        // 1) what we did is take from stack A till currSum not exceed maxSum 
+        //  after it exceed we stoere the max count by i will be index before it removed 
+
+        // 2) Then we start taking From Stag B Is add From Stack B
+        //  if some becomes greater than The maximum then we Then we pop From stock A
+        // and do i-- till the curSum become less than maxSum
+
+        // 3) if curSum <= MaxSum we update maxCount 
+        
+        int i = 0 ;
+        int j = 0 ;
+        int maxCou = 0 ;
+        int currSum = 0 ; 
+
+        while (i < a.size() && currSum + a.get(i) <= maxSum) {
+            currSum += a.get(i);
+            i++;
+        }
+        maxCou = i ;
+    
+        //for stack b step 2) of above 
+        while(j < b.size()){
+            currSum += b.get(j);
+            j++;
+            
+            while(currSum > maxSum && i > 0){
+                i--;
+                currSum -= a.get(i);
+            }
+
+            if(maxSum >= currSum){
+                maxCou = Math.max(maxCou, i + j );
+            }else{
+                break ;
+            }
+
+        }
+
+        return maxCou;
+    
     }
+
 }
