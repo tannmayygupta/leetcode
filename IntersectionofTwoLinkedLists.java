@@ -17,6 +17,8 @@ public class IntersectionofTwoLinkedLists {
  *     }
  * }
  */
+// 160. Intersection of Two Linked Lists 
+//  https://leetcode.com/problems/intersection-of-two-linked-lists/solutions/7614819/160-intersection-of-two-linked-lists-by-q24ev/
 class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
 
