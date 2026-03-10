@@ -3,7 +3,8 @@ public class LemonadeChange{
         int[] lemon = {5,5,10,20,5,5,5,5,5,5,5,5,5,10,5,5,20,5,20,5};
         System.out.println(lemonadeChange(lemon));
     }
-
+// https://leetcode.com/problems/lemonade-change/description/
+// 860. Lemonade Change
     public static boolean lemonadeChange(int[] bills) {
         int cou5 = 0 ;
         int cou10 = 0 ;
