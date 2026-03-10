@@ -1,6 +1,8 @@
 import java.util.Arrays;
 // Shortest Job first
 // https://www.geeksforgeeks.org/problems/shortest-job-first/1
+
+
 public class ShortestJobfirst {
     public static void main(String[] args) {
         int[] bt = {4,3,7,1,2};
