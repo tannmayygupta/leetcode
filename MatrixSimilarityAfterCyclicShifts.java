@@ -1,5 +1,10 @@
 import java.util.Arrays;
 
+
+
+// 2946. Matrix Similarity After Cyclic Shifts
+// https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/
+// https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/solutions/
 public class MatrixSimilarityAfterCyclicShifts {
     public static void main(String[] args) {
         int[][] mat = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
