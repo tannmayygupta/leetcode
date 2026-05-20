@@ -1,78 +1,60 @@
+import java.util.Scanner;
+
 public class StringtoIntegeratoi {
     /**
      * @param args
      */
     public static void main(String[] args) {
-        // Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        System.out.println(myAtoi(s));
+    }
 
-        // String s = "  -c042   " ;
+    public static int myAtoi(String s) {
+        long ans = 0 ;
+        int digit = 0 ;
+        int plus = 0 ;
+        int niga = 0 ;
+        boolean neg = false ;
+        for(int i = 0 ; i < s.length() ; i++){
+            char ch = s.charAt(i);
+            if( (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') || ch == '.' || digit > 0 && !(ch >= '0' && ch <= '9') || (plus > 0 && digit == 0 && !(ch >= '0' && ch <= '9')) || (niga > 0 && digit == 0 && !(ch >= '0' && ch <= '9')) ){
+                break ;
+            }else if(ch >= '0' && ch <= '9'){
+                digit++;
+                int c = ch - '0' ;
+                
+                ans = ans * 10 + c ; // this sometime overflow the variable
+                // so after updation change it to
 
-        String s = "04325x";
-
-        // System.out.println(s.trim());
-
-        // String[] s1 = s.trim().split("\\+s");
-
-        // System.out.println(s1);
-
-        String s1 = s.trim();
-
-        char[] c = s1.toCharArray();
-
-        int sign = 1 ;
-
-        int firstint = 0 ;
-
-        StringBuilder ans = new StringBuilder("");
-
-        // find sign 
-        // check sign is forst not after any integer 
-        // after getting first char return the string we got
-
-        int count = 0 ;
-
-
-        for(int i = 0 ; i < c.length ; i++){
-
-            char ch = Character.toLowerCase(c[i]);
-            
-            if( ch == '-'  && sign == 1){
-                if(count == 0){
-                    sign = -1 ;
+                if(!neg && ans > Integer.MAX_VALUE){
+                    return Integer.MAX_VALUE;
                 }
-                else{
-                    break ;
+
+                if(neg && -ans < Integer.MIN_VALUE){
+                    return Integer.MIN_VALUE;
                 }
-            }
-            else if( ch == '+'  && sign == 0){
-                if(count == 0){
-                    sign = -1 ;
+
+            }else if(ch == '-'){
+                if(digit == 0){
+                    neg = true ;
                 }
-                else{
-                    break ;
-                }
-            }
-            else if(ch >= 97 && ch <= 122){
-                break;
-            }
-            else if((ch >= 48 && ch <= 57)){
-                ans.append(ch);
-                count++;
+                niga++;
+                continue ;
+            }else if(ch == '+'){
+                plus++;
             }
         }
 
-        if(ans.length() == 0){
-            // return 0 ;
-            System.out.println(0);
+        if(neg){
+            ans = -1 * ans ;
+            if(ans < Integer.MIN_VALUE){
+                return Integer.MIN_VALUE ;
+            }else{
+                return (int) ans ;
+            }
         }
-        else{
-            String str = ans.toString();
-            int intValue = Integer.parseInt(str);
-            System.out.println(intValue * sign);
-        }
 
-
-
-
+        return ans > Integer.MAX_VALUE ? Integer.MAX_VALUE : (int) ans ;
     }
 }
