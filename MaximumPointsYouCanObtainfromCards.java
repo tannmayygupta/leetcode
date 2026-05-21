@@ -1,5 +1,6 @@
 import java.util.Scanner;
-
+// https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/
+// 1423. Maximum Points You Can Obtain from Cards
 public class MaximumPointsYouCanObtainfromCards {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
