@@ -1,5 +1,6 @@
 import java.util.HashSet;
-
+// 3941. Password Strength
+// https://leetcode.com/problems/password-strength/description/
 public class PasswordStrength {
     public static void main(String[] args) {
         String s = "aA1!";
