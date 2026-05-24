@@ -4,9 +4,9 @@
 
 public class RotatedBinarySearch {
     public static void main(String[] args) {
-        int[] arr = {4,5,6,7,0,1,2};
+        int[] arr = {7,6,5,4,3,2,1} ;
 
-        int target = 0 ;
+        int target = 3 ;
 
         int pivot = RBS(arr);
         
@@ -45,7 +45,7 @@ public class RotatedBinarySearch {
             int mid = start + (end - start) / 2 ;
 
             // 4 cases wirtten in yellow diary ultera tech
-
+            // 7,6,5,4,3,2,1
             if(mid < end && arr[mid] > arr[mid + 1]){
                 return mid ;
             }
